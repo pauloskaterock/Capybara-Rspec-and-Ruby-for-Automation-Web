@@ -1,9 +1,9 @@
-describe 'forms' do
+describe 'forms' , :ph do
 
 
     it ' login with sucess'  do
 
-        visit "https://training-wheels-protocol.herokuapp.com/login" 
+        visit "login" 
 
 
         fill_in 'username' , with: 'stark' # inspeiconado pode-se usar varios atributos
@@ -21,10 +21,12 @@ describe 'forms' do
 
      #tipos de validações EQL > TO INCLUDE  > HAVE_CONTENT
 
+     #page.save_screenshot('log/login_com_sucesso.png')
+
     end
     it 'Cenario com a senha incorreta' do
 
-        visit "https://training-wheels-protocol.herokuapp.com/login" 
+        visit "login" 
 
         fill_in 'username' , with: 'stark'
 
@@ -39,11 +41,13 @@ describe 'forms' do
 
      expect(find('#flash')).to have_content  'Senha é invalida!'
 
-     end
+     #page.save_screenshot('log/login_invalida.png')
+
+    end
 
      it ' Cenario com usuário não cadastrado' do
 
-        visit "https://training-wheels-protocol.herokuapp.com/login" 
+        visit "login" 
 
         fill_in 'username' , with: 'ph@ph.com'
 
@@ -58,7 +62,9 @@ describe 'forms' do
 
      expect(find('#flash')).to have_content  'O usuário informado não está cadastrado!'
 
-     end
+    # page.save_screenshot('log/login_usuario_nao_cadastrado.png') obtendo o screenshot
 
+     end
+     
 
 end

@@ -3,7 +3,7 @@
 describe ' caixa de seleção '  , :checkbox do 
 
     before(:each)  do  #BEFORE FAZ COM QUE O VISIT JA SEJA USADO PARA TODOS OS CENARIOS
-        visit  'https://training-wheels-protocol.herokuapp.com/checkboxes'
+        visit  'checkboxes'
     end
 
 

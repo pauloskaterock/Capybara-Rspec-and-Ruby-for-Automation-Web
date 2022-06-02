@@ -2,7 +2,7 @@ describe 'login com cadastro' , :login3 do
 
         before(:each)  do  
 
-          visit "https://training-wheels-protocol.herokuapp.com/access" 
+          visit "access" 
         end
 
 
@@ -21,7 +21,7 @@ describe 'login com cadastro' , :login3 do
             end
       expect(find('#flash')).to have_content 'Olá, Tony Stark. Você acessou a área logada!'
     end
-
+######################################################################
     it ' cadastro com sucesso'  do
 
      

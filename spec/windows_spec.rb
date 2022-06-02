@@ -2,7 +2,7 @@ describe ' alternando Janelas'  , :windows do
 
     before(:each)  do  
 
-        visit 'https://training-wheels-protocol.herokuapp.com/windows'
+        visit 'windows'
     end
 
     it 'Nova Janela' do

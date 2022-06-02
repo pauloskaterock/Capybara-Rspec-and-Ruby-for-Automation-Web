@@ -5,7 +5,7 @@ describe 'select 2 '  , :select do
 
             before(:each)  do  
 
-                visit 'https://training-wheels-protocol.herokuapp.com/apps/select2/single.html'
+                visit 'apps/select2/single.html'
             
             end
 
@@ -56,7 +56,7 @@ describe 'select 2 '  , :select do
 
     before(:each)  do  
 
-        visit 'https://training-wheels-protocol.herokuapp.com/apps/select2/multi.html'
+        visit 'apps/select2/multi.html'
     end
 
     def seleciona(ator)  #metodo

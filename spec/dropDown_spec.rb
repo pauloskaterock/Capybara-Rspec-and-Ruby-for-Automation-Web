@@ -4,7 +4,7 @@
 describe 'caixa de opções' , :dropdown do
 
     it 'Item especifico' do
-        visit 'https://training-wheels-protocol.herokuapp.com/dropdown'
+        visit 'dropdown'
 
         #select('opção' , from ,'elemento') codigo capybara
         select('Loki' , from: 'dropdown') #para elementos que possuem ID
@@ -13,7 +13,7 @@ describe 'caixa de opções' , :dropdown do
 
 
     it 'Item especifico utilizando o find' do
-        visit 'https://training-wheels-protocol.herokuapp.com/dropdown'
+        visit 'dropdown'
 
         
         drop = find('.avenger-list') 
@@ -25,7 +25,7 @@ describe 'caixa de opções' , :dropdown do
 
 
     it 'qualque item aleatorio'  , :sample do  
-        visit 'https://training-wheels-protocol.herokuapp.com/dropdown'
+        visit 'dropdown'
 
         
         drop = find('.avenger-list') 
